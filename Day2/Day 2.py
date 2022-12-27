@@ -21,7 +21,7 @@ def rounds(input_file: str):
         for line in guide:
             rounds.append(line.split())
 
-    print(f"First ten: {rounds[:10]}")
+    # print(f"First ten: {rounds[:10]}")
     return rounds
 
 
