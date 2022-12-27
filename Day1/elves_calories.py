@@ -14,7 +14,7 @@ def separate_elves(input_file: str):
 
 def main():
     total_cals = []
-    for i in separate_elves("Elves_goodies.txt"):
+    for i in separate_elves("elves_goodies.txt"):
         i = sum(i)
         total_cals.append(i)
 
