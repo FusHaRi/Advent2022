@@ -1,16 +1,9 @@
 # A = rock = X
 # B = paper = Y
 # C = scissors = Z
-rockOpponent = 'A'
-paperOpponent = 'B'
-scissorsOpponent = 'C'
-
-rockMy = 'X'
-paperMy = 'Y'
-scissorsMy = 'Z'
-
-my_score = 0
-opponent_score = 0
+rockOpponent, paperOpponent, scissorsOpponent = 'A', 'B', 'C'
+rockMy, paperMy, scissorsMy = 'X', 'Y', 'Z'
+my_score, opponent_score = 0, 0
 
 
 def rounds(input_file: str):
@@ -27,8 +20,7 @@ def rounds(input_file: str):
 
 def win_counter(rounds: list):
     global all
-    opponent_wins = 0
-    my_wins = 0
+    my_wins, opponent_wins = 0, 0
 
     for i in rounds:
         if i[0] == rockOpponent:
